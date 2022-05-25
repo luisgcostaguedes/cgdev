@@ -1,3 +1,6 @@
+/*para ficar mais fácil na criação do css, preferi separar por setor e depois importar todo aqui*/
+
+
 @import url(global.css);
 @import url(header.css);
 @import url(intro.css);

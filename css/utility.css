@@ -1,0 +1,91 @@
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.title-lg {
+  font: var(--h1);
+}
+
+.title-md {
+  font: var(--h2);
+}
+
+.title-sm {
+  font: var(--h3);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.text-sub {
+  font: var(--text-sub);
+}
+
+.main-red {
+  color: var(--main-red);
+}
+
+.main-purple {
+  color: var(--main-purple);
+}
+
+.main-blue {
+  color: var(--main-blue);
+}
+
+.main-green {
+  color: var(--main-green);
+}
+
+.main-yellow {
+  color: var(--main-yellow);
+}
+
+.base-gray100 {
+  color: var(--base-gray100);
+}
+
+.base-gray200 {
+  color: var(--base-gray200);
+}
+
+.base-gray300 {
+  color: var(--base-gray300);
+}
+
+.base-gray400 {
+  color: var(--base-gray400);
+}
+
+.base-gray500 {
+  color: var(--base-gray500);
+}
+
+.base-gray600 {
+  color: var(--base-gray600);
+}

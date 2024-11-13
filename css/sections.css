@@ -1,4 +1,3 @@
-/* Estilos base para desktop */
 #intro {
   background-image: url(../assets/Background_Intro.png);
   background-size: cover;
@@ -14,6 +13,7 @@
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
+    justify-self: center;
     align-items: center;
     text-align: center;
     width: 680px;
@@ -32,7 +32,7 @@
 
 .tag-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que as tags se organizem em várias linhas */
+  flex-direction: row;
   gap: 16px;
   justify-content: center;
   margin-bottom: 95px;
@@ -43,6 +43,7 @@
     flex-direction: row;
     align-items: center;
     border-radius: 999px;
+    width: fit-content;
     padding: 8px 16px;
     gap: 8px;
     font: var(--text-md);
@@ -51,20 +52,21 @@
 }
 
 .btn-arrow-down {
-  border: 2px solid transparent;
-  border-radius: 50%;
-  transition: border-color 0.3s ease;
+  border: 2px solid transparent; /* Inicialmente sem contorno visível */
+  border-radius: 50%; /* Borda arredondada */
+  transition: border-color 0.3s ease; /* Suavização da transição */
 }
 
 #projects {
   background-color: var(--base-gray200);
+  align-items: center;
   text-align: center;
   padding-bottom: 144px;
 
   .projects-container {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas padrão */
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
     figure {
@@ -95,85 +97,12 @@
 
 #services {
   background-color: var(--base-gray100);
-  height: auto; /* Permite altura variável em telas menores */
-  padding: 40px 20px;
+  height: 480px;
 }
-
 #contact {
   background-image: url(../assets/Background_Contacts.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto; /* Ajusta dinamicamente em telas menores */
-  padding: 40px 20px;
-}
-
-/* Estilos responsivos para tablets */
-@media (max-width: 768px) {
-  #intro {
-    height: auto;
-    padding: 20px;
-
-    header {
-      margin-top: 80px;
-      margin-bottom: 40px;
-      width: 90%; /* Adapta a largura para telas menores */
-      height: auto;
-
-      img {
-        padding-bottom: 32px;
-      }
-
-      h1 {
-        font-size: 24px; /* Ajuste de tamanho do título */
-      }
-    }
-  }
-
-  .tag-container {
-    gap: 12px;
-  }
-
-  #projects .projects-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
-  }
-}
-
-/* Estilos responsivos para smartphones */
-@media (max-width: 480px) {
-  #intro {
-    height: auto;
-    padding: 16px;
-
-    header {
-      margin-top: 60px;
-      margin-bottom: 20px;
-      width: 100%; /* Ocupar largura total */
-      height: auto;
-
-      img {
-        padding-bottom: 24px;
-      }
-
-      h1 {
-        font-size: 20px; /* Ajuste do título para smartphones */
-      }
-    }
-  }
-
-  .tag-container {
-    flex-direction: column; /* Empilha as tags verticalmente */
-    gap: 8px;
-  }
-
-  #projects .projects-container {
-    grid-template-columns: 1fr; /* 1 coluna para smartphones */
-    gap: 16px;
-  }
-
-  #services,
-  #contact {
-    padding: 20px;
-    height: auto;
-  }
+  height: 480px;
 }
